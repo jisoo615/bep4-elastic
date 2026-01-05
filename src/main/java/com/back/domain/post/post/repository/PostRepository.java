@@ -8,6 +8,4 @@ import java.util.Optional;
 
 public interface PostRepository extends ElasticsearchRepository<Post, String> {
     List<Post> findAll();
-
-    Optional<Post> findById(String id);
 }
